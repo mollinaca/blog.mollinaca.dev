@@ -20,10 +20,16 @@
     <loc>/tags/</loc>
     <lastmod>2021-07-16T23:18:57+09:00</lastmod>
   </url><url>
-    <loc>/tags/chromedriver/</loc>
-    <lastmod>2021-06-13T23:00:00+09:00</lastmod>
-  </url><url>
     <loc>/tags/python/</loc>
+    <lastmod>2021-07-05T23:00:00+09:00</lastmod>
+  </url><url>
+    <loc>/posts/20210705_graph/</loc>
+    <lastmod>2021-07-05T23:00:00+09:00</lastmod>
+  </url><url>
+    <loc>/tags/%E7%AB%B6%E3%83%97%E3%83%AD/</loc>
+    <lastmod>2021-07-05T23:00:00+09:00</lastmod>
+  </url><url>
+    <loc>/tags/chromedriver/</loc>
     <lastmod>2021-06-13T23:00:00+09:00</lastmod>
   </url><url>
     <loc>/tags/selenium/</loc>
@@ -47,9 +53,5 @@
     <loc>/pages/about/</loc>
   </url><url>
     <loc>/pages/</loc>
-  </url><url>
-    <loc>/posts/20210705_graph/</loc>
-  </url><url>
-    <loc>/tags/%E7%AB%B6%E3%83%97%E3%83%AD/</loc>
   </url>
 </urlset>
