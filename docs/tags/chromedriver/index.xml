@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>python on mollinaca:/dev/random</title>
-    <link>/tags/python/</link>
-    <description>Recent content in python on mollinaca:/dev/random</description>
+    <title>chromedriver on mollinaca:/dev/random</title>
+    <link>/tags/chromedriver/</link>
+    <description>Recent content in chromedriver on mollinaca:/dev/random</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
-    <lastBuildDate>Sun, 13 Jun 2021 23:00:00 +0900</lastBuildDate><atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Jun 2021 23:00:00 +0900</lastBuildDate><atom:link href="/tags/chromedriver/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>WSL2 で Python &#43; Selenium &#43; ChromeDriver でスクレイピング</title>
       <link>/posts/20210613_selenium/</link>
@@ -14,15 +14,6 @@
       
       <guid>/posts/20210613_selenium/</guid>
       <description>準備 WSL2でpython3が利用できる状態 snap で chromium をインストール WSL2 で snapd を有効にする方法は以下を参考にした WSL2(Ubuntu 20.04)上でSnapdを動かす $ sudo apt-get update &amp;amp;&amp;amp; sudo apt-get install -yqq daemonize dbus-user-session fontconfig $ sudo daemonize /usr/bin/unshare --fork --pid --mount-proc /lib/systemd/systemd --system-unit=basic.target $ exec sudo nsenter -t $(pidof systemd) -a su - $LOGNAME インストールされた chromium のバージョン確認</description>
-    </item>
-    
-    <item>
-      <title>python の3項演算子に関するメモ</title>
-      <link>/posts/20210606_python_memo/</link>
-      <pubDate>Sun, 06 Jun 2021 23:00:00 +0900</pubDate>
-      
-      <guid>/posts/20210606_python_memo/</guid>
-      <description>Python の3項演算子に関するメモ たまに使うけどこういうときどうすんだっけがわからなくて調べたのでメモしておく。 基本 if n == 1: print (&amp;#39;a&amp;#39;) else: print (&amp;#39;b&amp;#39;) は、 print (&amp;#39;a&amp;#39;) if n == 1 else print (&amp;#39;b&amp;#39;) と書ける。ワンライナーで書いたほうがすっきりする、可読性が高まるときに使う。 elif を使いたい場合</description>
     </item>
     
   </channel>
