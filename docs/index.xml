@@ -17,6 +17,15 @@
     </item>
     
     <item>
+      <title>python の3項演算子に関するメモ</title>
+      <link>/posts/20210606_python_memo/</link>
+      <pubDate>Sun, 06 Jun 2021 23:00:00 +0900</pubDate>
+      
+      <guid>/posts/20210606_python_memo/</guid>
+      <description>Python の3項演算子に関するメモ たまに使うけどこういうときどうすんだっけがわからなくて調べたのでメモしておく。 基本 if n == 1: print (&amp;#39;a&amp;#39;) else: print (&amp;#39;b&amp;#39;) は、 print (&amp;#39;a&amp;#39;) if n == 1 else print (&amp;#39;b&amp;#39;) と書ける。ワンライナーで書いたほうがすっきりする、可読性が高まるときに使う。 elif を使いたい場合</description>
+    </item>
+    
+    <item>
       <title>test</title>
       <link>/posts/19700101_test/</link>
       <pubDate>Thu, 01 Jan 1970 00:09:00 +0900</pubDate>
