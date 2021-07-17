@@ -1,3 +1,3 @@
 # blog.mollinaca.dev
 
-It's my blog site.
+It's my blog site's contents. -> https://blog.mollinaca.dev
