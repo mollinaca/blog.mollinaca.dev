@@ -9,10 +9,10 @@
     <lastBuildDate>Mon, 05 Jul 2021 23:00:00 +0900</lastBuildDate><atom:link href="/tags/%E7%AB%B6%E3%83%97%E3%83%AD/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>python でのグラフの取得方法</title>
-      <link>/posts/20210705_graph/</link>
+      <link>/posts/20210705/graph/</link>
       <pubDate>Mon, 05 Jul 2021 23:00:00 +0900</pubDate>
       
-      <guid>/posts/20210705_graph/</guid>
+      <guid>/posts/20210705/graph/</guid>
       <description>python でグラフの入力を受け取る 昨日のABC208のD問題が解けなかったのが悔しかったので、ちゃんとグラフ問題の解き方を勉強する。具体的には、 今雰囲気でやってるグラフ情報の取得と扱いをちゃんと学習する DFS/BFS の復習 最短経路問題等、典型問題とアルゴリズム</description>
     </item>
     

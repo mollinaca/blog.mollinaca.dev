@@ -9,46 +9,46 @@
     <lastBuildDate>Fri, 16 Jul 2021 23:18:57 +0900</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>new blog!</title>
-      <link>/posts/20210716_newblog/</link>
+      <link>/posts/20210716/newblog/</link>
       <pubDate>Fri, 16 Jul 2021 23:18:57 +0900</pubDate>
       
-      <guid>/posts/20210716_newblog/</guid>
+      <guid>/posts/20210716/newblog/</guid>
       <description>新しいブログサイト作った ちょっと前に作った blogger + StackEdit が気に食わなかったので新しく作ってみた。 Hugo でページを作成し、GitHubにデプロイし、GitHub Pagesで公開する。カスタムドメイン＋HTTPSも設定。 しばらくこれでやってみよう。 hugo の使い</description>
     </item>
     
     <item>
       <title>python でのグラフの取得方法</title>
-      <link>/posts/20210705_graph/</link>
+      <link>/posts/20210705/graph/</link>
       <pubDate>Mon, 05 Jul 2021 23:00:00 +0900</pubDate>
       
-      <guid>/posts/20210705_graph/</guid>
+      <guid>/posts/20210705/graph/</guid>
       <description>python でグラフの入力を受け取る 昨日のABC208のD問題が解けなかったのが悔しかったので、ちゃんとグラフ問題の解き方を勉強する。具体的には、 今雰囲気でやってるグラフ情報の取得と扱いをちゃんと学習する DFS/BFS の復習 最短経路問題等、典型問題とアルゴリズム</description>
     </item>
     
     <item>
       <title>WSL2 で Python &#43; Selenium &#43; ChromeDriver でスクレイピング</title>
-      <link>/posts/20210613_selenium/</link>
+      <link>/posts/20210613/selenium/</link>
       <pubDate>Sun, 13 Jun 2021 23:00:00 +0900</pubDate>
       
-      <guid>/posts/20210613_selenium/</guid>
+      <guid>/posts/20210613/selenium/</guid>
       <description>準備 WSL2でpython3が利用できる状態 snap で chromium をインストール WSL2 で snapd を有効にする方法は以下を参考にした WSL2(Ubuntu 20.04)上でSnapdを動かす $ sudo apt-get update &amp;amp;&amp;amp; sudo apt-get install -yqq daemonize dbus-user-session fontconfig $ sudo daemonize /usr/bin/unshare --fork --pid --mount-proc /lib/systemd/systemd --system-unit=basic.target $ exec sudo nsenter -t $(pidof systemd) -a su - $LOGNAME インストールされた chromium のバージョン確認</description>
     </item>
     
     <item>
       <title>python の3項演算子に関するメモ</title>
-      <link>/posts/20210606_python_memo/</link>
+      <link>/posts/20210606/python_memo/</link>
       <pubDate>Sun, 06 Jun 2021 23:00:00 +0900</pubDate>
       
-      <guid>/posts/20210606_python_memo/</guid>
+      <guid>/posts/20210606/python_memo/</guid>
       <description>Python の3項演算子に関するメモ たまに使うけどこういうときどうすんだっけがわからなくて調べたのでメモしておく。 基本 if n == 1: print (&amp;#39;a&amp;#39;) else: print (&amp;#39;b&amp;#39;) は、 print (&amp;#39;a&amp;#39;) if n == 1 else print (&amp;#39;b&amp;#39;) と書ける。ワンライナーで書いたほうがすっきりする、可読性が高まるときに使う。 elif を使いたい場合</description>
     </item>
     
     <item>
       <title>test</title>
-      <link>/posts/19700101_test/</link>
+      <link>/posts/19700101/test/</link>
       <pubDate>Thu, 01 Jan 1970 00:09:00 +0900</pubDate>
       
-      <guid>/posts/19700101_test/</guid>
+      <guid>/posts/19700101/test/</guid>
       <description>test記事 テスト投稿記事 test記事 テスト記事更新テスト</description>
     </item>
     

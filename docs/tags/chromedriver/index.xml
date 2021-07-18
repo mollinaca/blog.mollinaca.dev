@@ -9,10 +9,10 @@
     <lastBuildDate>Sun, 13 Jun 2021 23:00:00 +0900</lastBuildDate><atom:link href="/tags/chromedriver/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>WSL2 で Python &#43; Selenium &#43; ChromeDriver でスクレイピング</title>
-      <link>/posts/20210613_selenium/</link>
+      <link>/posts/20210613/selenium/</link>
       <pubDate>Sun, 13 Jun 2021 23:00:00 +0900</pubDate>
       
-      <guid>/posts/20210613_selenium/</guid>
+      <guid>/posts/20210613/selenium/</guid>
       <description>準備 WSL2でpython3が利用できる状態 snap で chromium をインストール WSL2 で snapd を有効にする方法は以下を参考にした WSL2(Ubuntu 20.04)上でSnapdを動かす $ sudo apt-get update &amp;amp;&amp;amp; sudo apt-get install -yqq daemonize dbus-user-session fontconfig $ sudo daemonize /usr/bin/unshare --fork --pid --mount-proc /lib/systemd/systemd --system-unit=basic.target $ exec sudo nsenter -t $(pidof systemd) -a su - $LOGNAME インストールされた chromium のバージョン確認</description>
     </item>
     
