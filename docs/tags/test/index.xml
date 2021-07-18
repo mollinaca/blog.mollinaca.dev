@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>test on mollinaca:/dev/random</title>
-    <link>/tags/test/</link>
+    <link>https://blog.mollinaca.dev/tags/test/</link>
     <description>Recent content in test on mollinaca:/dev/random</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
-    <lastBuildDate>Thu, 01 Jan 1970 00:09:00 +0900</lastBuildDate><atom:link href="/tags/test/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Jan 1970 00:09:00 +0900</lastBuildDate><atom:link href="https://blog.mollinaca.dev/tags/test/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>test</title>
-      <link>/posts/19700101/test/</link>
+      <link>https://blog.mollinaca.dev/posts/19700101/test/</link>
       <pubDate>Thu, 01 Jan 1970 00:09:00 +0900</pubDate>
       
-      <guid>/posts/19700101/test/</guid>
+      <guid>https://blog.mollinaca.dev/posts/19700101/test/</guid>
       <description>test記事 テスト投稿記事 test記事 テスト記事更新テスト</description>
     </item>
     

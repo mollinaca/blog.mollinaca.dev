@@ -2,62 +2,62 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mollinaca:/dev/random</title>
-    <link>/</link>
+    <link>https://blog.mollinaca.dev/</link>
     <description>Recent content on mollinaca:/dev/random</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
-    <lastBuildDate>Fri, 16 Jul 2021 23:18:57 +0900</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Jul 2021 23:18:57 +0900</lastBuildDate><atom:link href="https://blog.mollinaca.dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>new blog!</title>
-      <link>/posts/20210716/newblog/</link>
+      <link>https://blog.mollinaca.dev/posts/20210716/newblog/</link>
       <pubDate>Fri, 16 Jul 2021 23:18:57 +0900</pubDate>
       
-      <guid>/posts/20210716/newblog/</guid>
+      <guid>https://blog.mollinaca.dev/posts/20210716/newblog/</guid>
       <description>新しいブログサイト作った ちょっと前に作った blogger + StackEdit が気に食わなかったので新しく作ってみた。 Hugo でページを作成し、GitHubにデプロイし、GitHub Pagesで公開する。カスタムドメイン＋HTTPSも設定。 しばらくこれでやってみよう。 hugo の使い</description>
     </item>
     
     <item>
       <title>python でのグラフの取得方法</title>
-      <link>/posts/20210705/graph/</link>
+      <link>https://blog.mollinaca.dev/posts/20210705/graph/</link>
       <pubDate>Mon, 05 Jul 2021 23:00:00 +0900</pubDate>
       
-      <guid>/posts/20210705/graph/</guid>
+      <guid>https://blog.mollinaca.dev/posts/20210705/graph/</guid>
       <description>python でグラフの入力を受け取る 昨日のABC208のD問題が解けなかったのが悔しかったので、ちゃんとグラフ問題の解き方を勉強する。具体的には、 今雰囲気でやってるグラフ情報の取得と扱いをちゃんと学習する DFS/BFS の復習 最短経路問題等、典型問題とアルゴリズム</description>
     </item>
     
     <item>
       <title>WSL2 で Python &#43; Selenium &#43; ChromeDriver でスクレイピング</title>
-      <link>/posts/20210613/selenium/</link>
+      <link>https://blog.mollinaca.dev/posts/20210613/selenium/</link>
       <pubDate>Sun, 13 Jun 2021 23:00:00 +0900</pubDate>
       
-      <guid>/posts/20210613/selenium/</guid>
+      <guid>https://blog.mollinaca.dev/posts/20210613/selenium/</guid>
       <description>準備 WSL2でpython3が利用できる状態 snap で chromium をインストール WSL2 で snapd を有効にする方法は以下を参考にした WSL2(Ubuntu 20.04)上でSnapdを動かす $ sudo apt-get update &amp;amp;&amp;amp; sudo apt-get install -yqq daemonize dbus-user-session fontconfig $ sudo daemonize /usr/bin/unshare --fork --pid --mount-proc /lib/systemd/systemd --system-unit=basic.target $ exec sudo nsenter -t $(pidof systemd) -a su - $LOGNAME インストールされた chromium のバージョン確認</description>
     </item>
     
     <item>
       <title>python の3項演算子に関するメモ</title>
-      <link>/posts/20210606/python_memo/</link>
+      <link>https://blog.mollinaca.dev/posts/20210606/python_memo/</link>
       <pubDate>Sun, 06 Jun 2021 23:00:00 +0900</pubDate>
       
-      <guid>/posts/20210606/python_memo/</guid>
+      <guid>https://blog.mollinaca.dev/posts/20210606/python_memo/</guid>
       <description>Python の3項演算子に関するメモ たまに使うけどこういうときどうすんだっけがわからなくて調べたのでメモしておく。 基本 if n == 1: print (&amp;#39;a&amp;#39;) else: print (&amp;#39;b&amp;#39;) は、 print (&amp;#39;a&amp;#39;) if n == 1 else print (&amp;#39;b&amp;#39;) と書ける。ワンライナーで書いたほうがすっきりする、可読性が高まるときに使う。 elif を使いたい場合</description>
     </item>
     
     <item>
       <title>test</title>
-      <link>/posts/19700101/test/</link>
+      <link>https://blog.mollinaca.dev/posts/19700101/test/</link>
       <pubDate>Thu, 01 Jan 1970 00:09:00 +0900</pubDate>
       
-      <guid>/posts/19700101/test/</guid>
+      <guid>https://blog.mollinaca.dev/posts/19700101/test/</guid>
       <description>test記事 テスト投稿記事 test記事 テスト記事更新テスト</description>
     </item>
     
     <item>
       <title></title>
-      <link>/pages/about/</link>
+      <link>https://blog.mollinaca.dev/pages/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/pages/about/</guid>
+      <guid>https://blog.mollinaca.dev/pages/about/</guid>
       <description>このブログについて このブログは私が自分のメモや雑記をつらつらと書く場所です。 私について 埼玉在住の30代でサーバインフラエンジニア@ゲーム企業。 サーバインフラ周りの技術、ITセキュリティ等に興味があります。 2020年9月に第一子を設けて202</description>
     </item>
     

@@ -2,56 +2,56 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/tags/hugo/</loc>
+    <loc>https://blog.mollinaca.dev/tags/hugo/</loc>
     <lastmod>2021-07-16T23:18:57+09:00</lastmod>
   </url><url>
-    <loc>/tags/misc/</loc>
+    <loc>https://blog.mollinaca.dev/tags/misc/</loc>
     <lastmod>2021-07-16T23:18:57+09:00</lastmod>
   </url><url>
-    <loc>/</loc>
+    <loc>https://blog.mollinaca.dev/</loc>
     <lastmod>2021-07-16T23:18:57+09:00</lastmod>
   </url><url>
-    <loc>/posts/20210716/newblog/</loc>
+    <loc>https://blog.mollinaca.dev/posts/20210716/newblog/</loc>
     <lastmod>2021-07-16T23:18:57+09:00</lastmod>
   </url><url>
-    <loc>/posts/</loc>
+    <loc>https://blog.mollinaca.dev/posts/</loc>
     <lastmod>2021-07-16T23:18:57+09:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>https://blog.mollinaca.dev/tags/</loc>
     <lastmod>2021-07-16T23:18:57+09:00</lastmod>
   </url><url>
-    <loc>/tags/python/</loc>
+    <loc>https://blog.mollinaca.dev/tags/python/</loc>
     <lastmod>2021-07-05T23:00:00+09:00</lastmod>
   </url><url>
-    <loc>/posts/20210705/graph/</loc>
+    <loc>https://blog.mollinaca.dev/posts/20210705/graph/</loc>
     <lastmod>2021-07-05T23:00:00+09:00</lastmod>
   </url><url>
-    <loc>/tags/%E7%AB%B6%E3%83%97%E3%83%AD/</loc>
+    <loc>https://blog.mollinaca.dev/tags/%E7%AB%B6%E3%83%97%E3%83%AD/</loc>
     <lastmod>2021-07-05T23:00:00+09:00</lastmod>
   </url><url>
-    <loc>/tags/chromedriver/</loc>
+    <loc>https://blog.mollinaca.dev/tags/chromedriver/</loc>
     <lastmod>2021-06-13T23:00:00+09:00</lastmod>
   </url><url>
-    <loc>/tags/selenium/</loc>
+    <loc>https://blog.mollinaca.dev/tags/selenium/</loc>
     <lastmod>2021-06-13T23:00:00+09:00</lastmod>
   </url><url>
-    <loc>/tags/wsl2/</loc>
+    <loc>https://blog.mollinaca.dev/tags/wsl2/</loc>
     <lastmod>2021-06-13T23:00:00+09:00</lastmod>
   </url><url>
-    <loc>/posts/20210613/selenium/</loc>
+    <loc>https://blog.mollinaca.dev/posts/20210613/selenium/</loc>
     <lastmod>2021-06-13T23:00:00+09:00</lastmod>
   </url><url>
-    <loc>/posts/20210606/python_memo/</loc>
+    <loc>https://blog.mollinaca.dev/posts/20210606/python_memo/</loc>
     <lastmod>2021-06-06T23:00:00+09:00</lastmod>
   </url><url>
-    <loc>/tags/test/</loc>
+    <loc>https://blog.mollinaca.dev/tags/test/</loc>
     <lastmod>1970-01-01T00:09:00+09:00</lastmod>
   </url><url>
-    <loc>/posts/19700101/test/</loc>
+    <loc>https://blog.mollinaca.dev/posts/19700101/test/</loc>
     <lastmod>1970-01-01T00:09:00+09:00</lastmod>
   </url><url>
-    <loc>/pages/about/</loc>
+    <loc>https://blog.mollinaca.dev/pages/about/</loc>
   </url><url>
-    <loc>/pages/</loc>
+    <loc>https://blog.mollinaca.dev/pages/</loc>
   </url>
 </urlset>
