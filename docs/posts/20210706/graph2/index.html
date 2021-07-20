@@ -18,7 +18,7 @@
 		<meta itemprop="name" content="python でのグラフの取得方法(2)">
 <meta itemprop="description" content="隣接辞書 これは自分のオリジナル（？）。 オリジナル、というほどのアイデアでもないだろうけど、当初自分がグラフの問題を初めてみて、どうやってこの情報を管理したらいいんだろ？で最初に考えたやりかた。以下のようにグラフ情報をdictで取得する。 この"><meta itemprop="datePublished" content="2021-07-06T23:00:00+09:00" />
 <meta itemprop="dateModified" content="2021-07-06T23:00:00+09:00" />
-<meta itemprop="wordCount" content="1393">
+<meta itemprop="wordCount" content="1390">
 <meta itemprop="keywords" content="python,競プロ," />
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="python でのグラフの取得方法(2)"/>
@@ -128,12 +128,12 @@ print(graph)
 リストより辞書のほうがそもそもメモリ食うとかありそうだし。<br>
 以下の repo を作った。</p>
 <p><a href="https://github.com/mollinaca/graph-test" title="graph-test"><img src="https://gh-card.dev/repos/mollinaca/graph-test.svg" alt="graph-test"></a></p>
-<p>./make_graph.py は、任意サイズのランダムなグラフを作るためのスクリプト。ここで作ったグラフは /graphs ディレクトリに置いてもらえる。<br>
-graphs.py には、ここまで記載したグラフ取得方法をすべて書いてあり、実行できるようになっている。このスクリプトを実行し、グラフ取得処理にかかる時間、メモリサイズを測定する。<br>
+<p><code>./make_graph.py</code> は、任意サイズのランダムなグラフを作るためのスクリプト。ここで作ったグラフは <code>/graphs</code> ディレクトリに置いてもらえる。<br>
+<code>graphs.py</code> には、ここまで記載したグラフ取得方法をすべて書いてあり、実行できるようになっている。このスクリプトを実行し、グラフ取得処理にかかる時間、メモリサイズを測定する。<br>
 また、重み付きグラフは考慮しない（重みがあるないは本質的にはこの検証には無関係なので）。<br>
 また、今回は検索速度は測定はしない。別でやろう。</p>
-<p>なお、elapsed_time は何度か図ってスコアを取得するのが望ましいが、ここには1回やった結果のみを記す。<br>
-また、出力の2行目は graph 変数のメモリサイズ、すなわち print (sys.getsizeof(graph))である。<br>
+<p>なお、<code>elapsed_time</code> は一度の測定ではなく何度か図ってスコアを取得するのが望ましいが、ここには1回やった結果のみを記す。（めんどうだから）<br>
+また、出力の2行目は graph 変数のメモリサイズ、すなわち <code>print (sys.getsizeof(graph))</code> である。<br>
 いざ、実行。</p>
 <h3 id="隣接リスト">隣接リスト</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ./graphs.py &lt; graphs/10_10.txt  
