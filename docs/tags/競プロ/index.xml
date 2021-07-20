@@ -6,7 +6,16 @@
     <description>Recent content in 競プロ on mollinaca:/dev/random</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
-    <lastBuildDate>Wed, 07 Jul 2021 23:00:00 +0900</lastBuildDate><atom:link href="https://blog.mollinaca.dev/tags/%E7%AB%B6%E3%83%97%E3%83%AD/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 Jul 2021 23:00:00 +0900</lastBuildDate><atom:link href="https://blog.mollinaca.dev/tags/%E7%AB%B6%E3%83%97%E3%83%AD/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DFS と BFS の例題を解く</title>
+      <link>https://blog.mollinaca.dev/posts/20210709/dfs_bfs2/</link>
+      <pubDate>Fri, 09 Jul 2021 23:00:00 +0900</pubDate>
+      
+      <guid>https://blog.mollinaca.dev/posts/20210709/dfs_bfs2/</guid>
+      <description>A - 深さ優先探索 次の問題を解く。A - 深さ優先探索 実装 H,W = map(int,input().split()) grid = [list(input()) for i in range(H)] # スタート地点を探す found = False for y,line in enumerate(grid): for x,p in enumerate(line): if p == &amp;#34;s&amp;#34;: start = (y,x) found = True break if found: break from collections import deque q = deque() q.append(start) direction = [[-1,0],[1,0],[0,-1],[0,1]] while q: p = q.pop() # DFS y = p[0] x = p[1] for d in direction: ny = y + d[0] nx = x + d[1] if 0 &amp;lt;= ny &amp;lt; H and 0 &amp;lt;= nx &amp;lt;</description>
+    </item>
+    
     <item>
       <title>DFS と BFS</title>
       <link>https://blog.mollinaca.dev/posts/20210707/dfs_bfs/</link>
