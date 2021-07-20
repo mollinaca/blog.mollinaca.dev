@@ -13,7 +13,7 @@
       <pubDate>Thu, 01 Jan 1970 00:09:00 +0900</pubDate>
       
       <guid>https://blog.mollinaca.dev/posts/19700101/test/</guid>
-      <description>test記事 テスト投稿記事 test記事 テスト記事更新テスト</description>
+      <description>test記事 テスト投稿記事 test記事 テスト記事更新テスト 画像貼り付け 1 &amp;lt;img src=my_icon.jpg&amp;gt; 2 [my_icon.jpg](my_icon.jpg) my_icon.jpg 3 {{&amp;lt; figure src=&amp;ldquo;my_icon.jpg&amp;rdquo; &amp;gt;}}</description>
     </item>
     
   </channel>
