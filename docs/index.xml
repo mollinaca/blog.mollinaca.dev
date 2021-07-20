@@ -6,16 +6,7 @@
     <description>Recent content on mollinaca:/dev/random</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
-    <lastBuildDate>Tue, 20 Jul 2021 14:52:13 +0900</lastBuildDate><atom:link href="https://blog.mollinaca.dev/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Graph2</title>
-      <link>https://blog.mollinaca.dev/posts/20210706/graph2/</link>
-      <pubDate>Tue, 20 Jul 2021 14:52:13 +0900</pubDate>
-      
-      <guid>https://blog.mollinaca.dev/posts/20210706/graph2/</guid>
-      <description>隣接辞書 これは自分のオリジナル（？）。 オリジナル、というほどのアイデアでもないだろうけど、当初自分がグラフの問題を初めてみて、どうやってこの情報を管理したらいいんだろ？で最初に考えたやりかた。以下のようにグラフ情報をdictで取得する。 この</description>
-    </item>
-    
+    <lastBuildDate>Fri, 16 Jul 2021 23:18:57 +0900</lastBuildDate><atom:link href="https://blog.mollinaca.dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>new blog!</title>
       <link>https://blog.mollinaca.dev/posts/20210716/newblog/</link>
@@ -23,6 +14,15 @@
       
       <guid>https://blog.mollinaca.dev/posts/20210716/newblog/</guid>
       <description>新しいブログサイト作った ちょっと前に作った blogger + StackEdit が気に食わなかったので新しく作ってみた。 Hugo でページを作成し、GitHubにデプロイし、GitHub Pagesで公開する。カスタムドメイン＋HTTPSも設定。 しばらくこれでやってみよう。 hugo の使い</description>
+    </item>
+    
+    <item>
+      <title>python でのグラフの取得方法(2)</title>
+      <link>https://blog.mollinaca.dev/posts/20210706/graph2/</link>
+      <pubDate>Tue, 06 Jul 2021 23:00:00 +0900</pubDate>
+      
+      <guid>https://blog.mollinaca.dev/posts/20210706/graph2/</guid>
+      <description>隣接辞書 これは自分のオリジナル（？）。 オリジナル、というほどのアイデアでもないだろうけど、当初自分がグラフの問題を初めてみて、どうやってこの情報を管理したらいいんだろ？で最初に考えたやりかた。以下のようにグラフ情報をdictで取得する。 この</description>
     </item>
     
     <item>
