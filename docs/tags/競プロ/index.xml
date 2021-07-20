@@ -6,7 +6,16 @@
     <description>Recent content in 競プロ on mollinaca:/dev/random</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
-    <lastBuildDate>Tue, 06 Jul 2021 23:00:00 +0900</lastBuildDate><atom:link href="https://blog.mollinaca.dev/tags/%E7%AB%B6%E3%83%97%E3%83%AD/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Jul 2021 23:00:00 +0900</lastBuildDate><atom:link href="https://blog.mollinaca.dev/tags/%E7%AB%B6%E3%83%97%E3%83%AD/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DFS と BFS</title>
+      <link>https://blog.mollinaca.dev/posts/20210707/dfs_bfs/</link>
+      <pubDate>Wed, 07 Jul 2021 23:00:00 +0900</pubDate>
+      
+      <guid>https://blog.mollinaca.dev/posts/20210707/dfs_bfs/</guid>
+      <description>グラフを取得できたら、深さ優先探索（DFS）と幅優先探索（BFS）を実装してみる。 問題1 入力するグラフは以下。よくあるやつ。 これをテキスト情報で入力にすると以下のようになる。 7 6 1 2 1 3 2 4 2 5 3 6 3 7 このグラフに対して、1から出発して7に</description>
+    </item>
+    
     <item>
       <title>python でのグラフの取得方法(2)</title>
       <link>https://blog.mollinaca.dev/posts/20210706/graph2/</link>
