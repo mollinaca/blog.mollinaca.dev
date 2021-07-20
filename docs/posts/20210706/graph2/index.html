@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Graph2 - mollinaca:/dev/random</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="Graph2" />
+<meta property="og:description" content="隣接辞書 これは自分のオリジナル（？）。 オリジナル、というほどのアイデアでもないだろうけど、当初自分がグラフの問題を初めてみて、どうやってこの情報を管理したらいいんだろ？で最初に考えたやりかた。以下のようにグラフ情報をdictで取得する。 この" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.mollinaca.dev/posts/20210706/graph2/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-07-20T14:52:13+09:00" />
+<meta property="article:modified_time" content="2021-07-20T14:52:13+09:00" />
+
+
+		<meta itemprop="name" content="Graph2">
+<meta itemprop="description" content="隣接辞書 これは自分のオリジナル（？）。 オリジナル、というほどのアイデアでもないだろうけど、当初自分がグラフの問題を初めてみて、どうやってこの情報を管理したらいいんだろ？で最初に考えたやりかた。以下のようにグラフ情報をdictで取得する。 この"><meta itemprop="datePublished" content="2021-07-20T14:52:13+09:00" />
+<meta itemprop="dateModified" content="2021-07-20T14:52:13+09:00" />
+<meta itemprop="wordCount" content="1393">
+<meta itemprop="keywords" content="python,競プロ," />
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Graph2"/>
+<meta name="twitter:description" content="隣接辞書 これは自分のオリジナル（？）。 オリジナル、というほどのアイデアでもないだろうけど、当初自分がグラフの問題を初めてみて、どうやってこの情報を管理したらいいんだろ？で最初に考えたやりかた。以下のようにグラフ情報をdictで取得する。 この"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="mollinaca:/dev/random" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">mollinaca:/dev/random</div>
+					
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/pages/about/">
+				
+				<span class="menu__text">ABOUT</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/posts/">
+				
+				<span class="menu__text">POSTS</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Graph2</h1>
+			<div class="post__meta meta"><div class="meta__item-author meta__item">
+	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">mollinaca</span>
+</div>
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-07-20T14:52:13&#43;09:00">2021-07-20</time></div></div>
+		</header>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#検証">検証</a>
+      <ul>
+        <li><a href="#隣接リスト">隣接リスト</a></li>
+        <li><a href="#隣接行列">隣接行列</a></li>
+        <li><a href="#隣接辞書-1">隣接辞書</a></li>
+      </ul>
+    </li>
+    <li><a href="#まとめ">まとめ</a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<h1 id="隣接辞書">隣接辞書</h1>
+<p>これは自分のオリジナル（？）。
+オリジナル、というほどのアイデアでもないだろうけど、当初自分がグラフの問題を初めてみて、どうやってこの情報を管理したらいいんだろ？で最初に考えたやりかた。以下のようにグラフ情報をdictで取得する。<br>
+このやり方のメリットは、この手の問題だとたいてい頂点が1番からN番まで という問題内容になっており、これをリストで管理する場合にindexが0始まりなため、1番目の頂点がリストの0番目となるのが直感的にわかりにくい。<br>
+これを、辞書のキーとして扱うと、直感的にわかりやすいし、検索性も良いはず。</p>
+<p>取得コード</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">n, m <span style="color:#f92672">=</span> map(int,input()<span style="color:#f92672">.</span>split())
+graph <span style="color:#f92672">=</span> {}
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>,n<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>):
+    graph[i] <span style="color:#f92672">=</span> []
+<span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> range(m):
+    a, b <span style="color:#f92672">=</span> map(int,input()<span style="color:#f92672">.</span>split())
+    graph[a]<span style="color:#f92672">.</span>append(b)
+    graph[b]<span style="color:#f92672">.</span>append(a) <span style="color:#75715e"># 有効グラフなら消す</span>
+print(graph)
+</code></pre></div><p>出力は以下のようになる。</p>
+<pre><code>{1: [2], 2: [1, 3, 4], 3: [2, 4], 4: [3, 2]}
+</code></pre><p>これなら、1番目の頂点が2番目と、2番目の頂点が1番目、3番目、4番目と接続している、というのが直感的にわかりやすい。<br>
+また、メモリ使用量は 隣接リスト &lt; 隣接辞書 &lt; 隣接行列 となるはず（はず！）で、検索速度は、隣接行列 &lt; 隣接辞書 &lt; 隣接リスト となる、はず（はず。。。）。</p>
+<h2 id="検証">検証</h2>
+<p>というわけで検証。
+実際上記の、はず、は自信ない。<br>
+リストより辞書のほうがそもそもメモリ食うとかありそうだし。<br>
+以下の repo を作った。</p>
+<p><a href="https://github.com/mollinaca/graph-test" title="graph-test"><img src="https://gh-card.dev/repos/mollinaca/graph-test.svg" alt="graph-test"></a></p>
+<p>./make_graph.py は、任意サイズのランダムなグラフを作るためのスクリプト。ここで作ったグラフは /graphs ディレクトリに置いてもらえる。<br>
+graphs.py には、ここまで記載したグラフ取得方法をすべて書いてあり、実行できるようになっている。このスクリプトを実行し、グラフ取得処理にかかる時間、メモリサイズを測定する。<br>
+また、重み付きグラフは考慮しない（重みがあるないは本質的にはこの検証には無関係なので）。<br>
+また、今回は検索速度は測定はしない。別でやろう。</p>
+<p>なお、elapsed_time は何度か図ってスコアを取得するのが望ましいが、ここには1回やった結果のみを記す。<br>
+また、出力の2行目は graph 変数のメモリサイズ、すなわち print (sys.getsizeof(graph))である。<br>
+いざ、実行。</p>
+<h3 id="隣接リスト">隣接リスト</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ./graphs.py &lt; graphs/10_10.txt  
+elapsed_time:0.00033020973205566406<span style="color:#f92672">[</span>sec<span style="color:#f92672">]</span>  
+<span style="color:#ae81ff">184</span>
+
+$ ./graphs.py &lt; graphs/100_200.txt  
+elapsed_time:0.021986961364746094<span style="color:#f92672">[</span>sec<span style="color:#f92672">]</span>  
+<span style="color:#ae81ff">904</span>
+
+$ ./graphs.py &lt; graphs/1000_1500.txt  
+elapsed_time:0.002926349639892578<span style="color:#f92672">[</span>sec<span style="color:#f92672">]</span>  
+<span style="color:#ae81ff">9016</span>
+
+$ ./graphs.py &lt; graphs/10000_20000.txt  
+elapsed_time:0.040108442306518555<span style="color:#f92672">[</span>sec<span style="color:#f92672">]</span>  
+<span style="color:#ae81ff">87616</span>
+
+$ ./graphs.py &lt; graphs/100000_200000.txt  
+elapsed_time:0.5490686893463135<span style="color:#f92672">[</span>sec<span style="color:#f92672">]</span>  
+<span style="color:#ae81ff">824456</span>
+</code></pre></div><h3 id="隣接行列">隣接行列</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ./graphs.py &lt; graphs/10_10.txt  
+elapsed_time:0.0015292167663574219<span style="color:#f92672">[</span>sec<span style="color:#f92672">]</span>  
+<span style="color:#ae81ff">184</span>
+
+$ ./graphs.py &lt; graphs/100_200.txt  
+elapsed_time:0.02972698211669922<span style="color:#f92672">[</span>sec<span style="color:#f92672">]</span>  
+<span style="color:#ae81ff">904</span>
+
+$ ./graphs.py &lt; graphs/1000_1500.txt  
+elapsed_time:0.018473386764526367<span style="color:#f92672">[</span>sec<span style="color:#f92672">]</span>  
+<span style="color:#ae81ff">9016</span>
+
+$ ./graphs.py &lt; graphs/10000_20000.txt  
+elapsed_time:0.994093656539917<span style="color:#f92672">[</span>sec<span style="color:#f92672">]</span>  
+<span style="color:#ae81ff">87616</span>
+
+$ ./graphs.py &lt; graphs/100000_200000.txt  
+  <span style="color:#75715e"># -&gt; 100000_200000 は実行したところメモリエラーとなった。おそらく大きすぎてメモリ溢れた模様。</span>
+</code></pre></div><h3 id="隣接辞書-1">隣接辞書</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ./graphs.py &lt; graphs/10_10.txt  
+elapsed_time:0.00038743019104003906<span style="color:#f92672">[</span>sec<span style="color:#f92672">]</span>  
+<span style="color:#ae81ff">360</span>
+
+$ ./graphs.py &lt; graphs/100_200.txt  
+elapsed_time:0.0006527900695800781<span style="color:#f92672">[</span>sec<span style="color:#f92672">]</span>  
+<span style="color:#ae81ff">4696</span>
+
+$ ./graphs.py &lt; graphs/1000_1500.txt  
+elapsed_time:0.002968311309814453<span style="color:#f92672">[</span>sec<span style="color:#f92672">]</span>  
+<span style="color:#ae81ff">36960</span>
+
+$ ./graphs.py &lt; graphs/10000_20000.txt  
+elapsed_time:0.044747352600097656<span style="color:#f92672">[</span>sec<span style="color:#f92672">]</span>  
+<span style="color:#ae81ff">295000</span>
+
+$ ./graphs.py &lt; graphs/100000_200000.txt  
+elapsed_time:0.656484842300415<span style="color:#f92672">[</span>sec<span style="color:#f92672">]</span>  
+<span style="color:#ae81ff">5242968</span>
+</code></pre></div><h2 id="まとめ">まとめ</h2>
+<p>上記結果を比較すると、以下のようになった。</p>
+<table>
+<thead>
+<tr>
+<th>メモリサイズ</th>
+<th>取得にかかる速度</th>
+<th>検索速度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>隣接リスト</td>
+<td>◯</td>
+<td>◯</td>
+</tr>
+<tr>
+<td>隣接行列</td>
+<td>×</td>
+<td>△</td>
+</tr>
+<tr>
+<td>隣接辞書</td>
+<td>△</td>
+<td>◯</td>
+</tr>
+</tbody>
+</table>
+<p>上記の結果は、あくまでざっくり測定なので正確性は期待しないでください。とはいえ直感的には大きく間違ってないと思う。<br>
+グラフサイズが小さい場合は、最初のグラフの初期化処理が無視できないが（O(n+m))、ある程度大きくなると（今回の測定では頂点数100以上の場合）無視できて、mのサイズに比例して取得時間がかかる（O(m)になる）。</p>
+<h1 id="感想">感想</h1>
+<p>結局、普段競プロで出会うような問題に対してはどれを使えばよいか？<br>
+これを見ると、メモリサイズが許すなら辞書だなぁと思う。個人的には直感的な使いやすさが段違い。<br>
+ただ、そもそも競プロの文脈で「直感的なわかりやすさ」を優先するのは間違ってるはずで、これはあくまで茶レベルの自分においての話。<br>
+緑以上を目指す場合はリストと行列をユースケースにおいて使い分けられる必要があるだろうと思う。</p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/python/" rel="tag">python</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/%E7%AB%B6%E3%83%97%E3%83%AD/" rel="tag">競プロ</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/posts/20210716/newblog/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">new blog!</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 mollinaca.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
