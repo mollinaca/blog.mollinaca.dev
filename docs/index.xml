@@ -53,6 +53,15 @@
     </item>
     
     <item>
+      <title>インターネット回線を切り替えた</title>
+      <link>https://blog.mollinaca.dev/posts/20210619/network_change/</link>
+      <pubDate>Sat, 19 Jun 2021 23:00:00 +0900</pubDate>
+      
+      <guid>https://blog.mollinaca.dev/posts/20210619/network_change/</guid>
+      <description>回線を切り替えた インターネットに接続する回線とISPを変更した。 変更理由は大したものではなくて、最近は家庭内ポイント利用をdポイントにまとめているため、回線もドコモ光に変更したらお得そう、というだけ。 現状に不満があったわけではないので、悪化</description>
+    </item>
+    
+    <item>
       <title>WSL2 で Python &#43; Selenium &#43; ChromeDriver でスクレイピング</title>
       <link>https://blog.mollinaca.dev/posts/20210613/selenium/</link>
       <pubDate>Sun, 13 Jun 2021 23:00:00 +0900</pubDate>
