@@ -17,6 +17,15 @@
     </item>
     
     <item>
+      <title>ベルマンフォード その1</title>
+      <link>https://blog.mollinaca.dev/posts/20210725/bellmanford/</link>
+      <pubDate>Sun, 25 Jul 2021 23:00:00 +0900</pubDate>
+      
+      <guid>https://blog.mollinaca.dev/posts/20210725/bellmanford/</guid>
+      <description>ベルマンフォードを実装する その(1) 概要 ベルマンフォードは、グラフアルゴリズムにおいて 任意の2点間の最短経路 を求めるアルゴリズムである。 以下の場合に利用ができる。 DAG(有効グラフかつ閉路をもたない)である 負のコストがあってもOK また、負の</description>
+    </item>
+    
+    <item>
       <title>new blog!</title>
       <link>https://blog.mollinaca.dev/posts/20210716/newblog/</link>
       <pubDate>Fri, 16 Jul 2021 23:18:57 +0900</pubDate>

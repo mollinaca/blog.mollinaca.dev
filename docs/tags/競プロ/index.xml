@@ -6,7 +6,16 @@
     <description>Recent content in 競プロ on mollinaca:/dev/random</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
-    <lastBuildDate>Fri, 09 Jul 2021 23:00:00 +0900</lastBuildDate><atom:link href="https://blog.mollinaca.dev/tags/%E7%AB%B6%E3%83%97%E3%83%AD/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Jul 2021 23:00:00 +0900</lastBuildDate><atom:link href="https://blog.mollinaca.dev/tags/%E7%AB%B6%E3%83%97%E3%83%AD/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ベルマンフォード その1</title>
+      <link>https://blog.mollinaca.dev/posts/20210725/bellmanford/</link>
+      <pubDate>Sun, 25 Jul 2021 23:00:00 +0900</pubDate>
+      
+      <guid>https://blog.mollinaca.dev/posts/20210725/bellmanford/</guid>
+      <description>ベルマンフォードを実装する その(1) 概要 ベルマンフォードは、グラフアルゴリズムにおいて 任意の2点間の最短経路 を求めるアルゴリズムである。 以下の場合に利用ができる。 DAG(有効グラフかつ閉路をもたない)である 負のコストがあってもOK また、負の</description>
+    </item>
+    
     <item>
       <title>DFS と BFS の例題を解く</title>
       <link>https://blog.mollinaca.dev/posts/20210709/dfs_bfs2/</link>
