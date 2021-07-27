@@ -6,7 +6,16 @@
     <description>Recent content on mollinaca:/dev/random</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
-    <lastBuildDate>Fri, 16 Jul 2021 23:18:57 +0900</lastBuildDate><atom:link href="https://blog.mollinaca.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Jul 2021 15:00:00 +0900</lastBuildDate><atom:link href="https://blog.mollinaca.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>インターネット回線を切り替えた(2)</title>
+      <link>https://blog.mollinaca.dev/posts/20210727/network_change2/</link>
+      <pubDate>Tue, 27 Jul 2021 15:00:00 +0900</pubDate>
+      
+      <guid>https://blog.mollinaca.dev/posts/20210727/network_change2/</guid>
+      <description>前回、6月中旬に家庭の都合でインターネット回線とISPを変更したが、すこぶる回線品質が悪化し耐え切れず1ヶ月でまた変更を行った。 幸いドコモ光を使っていると、組み合わせで使えるISPの変更は（特殊なオプション等を利用していなければ）ドコモ光の</description>
+    </item>
+    
     <item>
       <title>new blog!</title>
       <link>https://blog.mollinaca.dev/posts/20210716/newblog/</link>

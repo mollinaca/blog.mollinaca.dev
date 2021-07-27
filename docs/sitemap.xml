@@ -2,22 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.mollinaca.dev/tags/misc/</loc>
+    <lastmod>2021-07-27T15:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.mollinaca.dev/</loc>
+    <lastmod>2021-07-27T15:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.mollinaca.dev/posts/</loc>
+    <lastmod>2021-07-27T15:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.mollinaca.dev/tags/</loc>
+    <lastmod>2021-07-27T15:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.mollinaca.dev/posts/20210727/network_change2/</loc>
+    <lastmod>2021-07-27T15:00:00+09:00</lastmod>
+  </url><url>
     <loc>https://blog.mollinaca.dev/tags/hugo/</loc>
     <lastmod>2021-07-16T23:18:57+09:00</lastmod>
   </url><url>
-    <loc>https://blog.mollinaca.dev/tags/misc/</loc>
-    <lastmod>2021-07-16T23:18:57+09:00</lastmod>
-  </url><url>
-    <loc>https://blog.mollinaca.dev/</loc>
-    <lastmod>2021-07-16T23:18:57+09:00</lastmod>
-  </url><url>
     <loc>https://blog.mollinaca.dev/posts/20210716/newblog/</loc>
-    <lastmod>2021-07-16T23:18:57+09:00</lastmod>
-  </url><url>
-    <loc>https://blog.mollinaca.dev/posts/</loc>
-    <lastmod>2021-07-16T23:18:57+09:00</lastmod>
-  </url><url>
-    <loc>https://blog.mollinaca.dev/tags/</loc>
     <lastmod>2021-07-16T23:18:57+09:00</lastmod>
   </url><url>
     <loc>https://blog.mollinaca.dev/posts/20210709/dfs_bfs2/</loc>
