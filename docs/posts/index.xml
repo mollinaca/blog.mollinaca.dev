@@ -6,7 +6,16 @@
     <description>Recent content in Posts on mollinaca:/dev/random</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
-    <lastBuildDate>Tue, 27 Jul 2021 15:00:00 +0900</lastBuildDate><atom:link href="https://blog.mollinaca.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 31 Jul 2021 23:00:00 +0900</lastBuildDate><atom:link href="https://blog.mollinaca.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ABC212</title>
+      <link>https://blog.mollinaca.dev/posts/20210731/abc212/</link>
+      <pubDate>Sat, 31 Jul 2021 23:00:00 +0900</pubDate>
+      
+      <guid>https://blog.mollinaca.dev/posts/20210731/abc212/</guid>
+      <description>A - Alloy 問題: A - Alloy 整数AとBが入力される。 A == 0 なら &amp;ldquo;Sliver&amp;rdquo;, B == 0 なら &amp;ldquo;Gold&amp;rdquo;, それ以外なら &amp;ldquo;Alloy&amp;rdquo; を出力する。 A,B = map(int,input().split()) if 0 &amp;lt; A and 0 &amp;lt; B: print (&amp;#34;Alloy&amp;#34;) elif B == 0: print (&amp;#34;Gold&amp;#34;) elif A == 0: print (&amp;#34;Silver&amp;#34;) else: pass 問題文通り実装するだけ。最後の else:pass はいらないな。 B - Weak Password 問題: B - Weak Password 文字列として数字4桁が入力</description>
+    </item>
+    
     <item>
       <title>インターネット回線を切り替えた(2)</title>
       <link>https://blog.mollinaca.dev/posts/20210727/network_change2/</link>

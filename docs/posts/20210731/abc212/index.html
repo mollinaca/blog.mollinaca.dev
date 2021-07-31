@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ABC212 - mollinaca:/dev/random</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="ABC212" />
+<meta property="og:description" content="A - Alloy 問題: A - Alloy 整数AとBが入力される。 A == 0 なら &ldquo;Sliver&rdquo;, B == 0 なら &ldquo;Gold&rdquo;, それ以外なら &ldquo;Alloy&rdquo; を出力する。 A,B = map(int,input().split()) if 0 &lt; A and 0 &lt; B: print (&#34;Alloy&#34;) elif B == 0: print (&#34;Gold&#34;) elif A == 0: print (&#34;Silver&#34;) else: pass 問題文通り実装するだけ。最後の else:pass はいらないな。 B - Weak Password 問題: B - Weak Password 文字列として数字4桁が入力" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.mollinaca.dev/posts/20210731/abc212/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-07-31T23:00:00+09:00" />
+<meta property="article:modified_time" content="2021-07-31T23:00:00+09:00" />
+
+
+		<meta itemprop="name" content="ABC212">
+<meta itemprop="description" content="A - Alloy 問題: A - Alloy 整数AとBが入力される。 A == 0 なら &ldquo;Sliver&rdquo;, B == 0 なら &ldquo;Gold&rdquo;, それ以外なら &ldquo;Alloy&rdquo; を出力する。 A,B = map(int,input().split()) if 0 &lt; A and 0 &lt; B: print (&#34;Alloy&#34;) elif B == 0: print (&#34;Gold&#34;) elif A == 0: print (&#34;Silver&#34;) else: pass 問題文通り実装するだけ。最後の else:pass はいらないな。 B - Weak Password 問題: B - Weak Password 文字列として数字4桁が入力"><meta itemprop="datePublished" content="2021-07-31T23:00:00+09:00" />
+<meta itemprop="dateModified" content="2021-07-31T23:00:00+09:00" />
+<meta itemprop="wordCount" content="839">
+<meta itemprop="keywords" content="競プロ,python," />
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="ABC212"/>
+<meta name="twitter:description" content="A - Alloy 問題: A - Alloy 整数AとBが入力される。 A == 0 なら &ldquo;Sliver&rdquo;, B == 0 なら &ldquo;Gold&rdquo;, それ以外なら &ldquo;Alloy&rdquo; を出力する。 A,B = map(int,input().split()) if 0 &lt; A and 0 &lt; B: print (&#34;Alloy&#34;) elif B == 0: print (&#34;Gold&#34;) elif A == 0: print (&#34;Silver&#34;) else: pass 問題文通り実装するだけ。最後の else:pass はいらないな。 B - Weak Password 問題: B - Weak Password 文字列として数字4桁が入力"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="mollinaca:/dev/random" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">mollinaca:/dev/random</div>
+					
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/pages/about/">
+				
+				<span class="menu__text">ABOUT</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/posts/">
+				
+				<span class="menu__text">POSTS</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">ABC212</h1>
+			<div class="post__meta meta"><div class="meta__item-author meta__item">
+	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">mollinaca</span>
+</div>
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-07-31T23:00:00&#43;09:00">2021-07-31</time></div></div>
+		</header>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#a---alloy">A - Alloy</a></li>
+    <li><a href="#b---weak-password">B - Weak Password</a></li>
+    <li><a href="#c---min-difference">C - Min Difference</a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<h1 id="a---alloy">A - Alloy</h1>
+<p>問題: <a href="https://atcoder.jp/contests/abc212/tasks/abc212_a">A - Alloy</a></p>
+<p>整数AとBが入力される。<br>
+<code>A == 0</code> なら &ldquo;Sliver&rdquo;, <code>B == 0</code> なら &ldquo;Gold&rdquo;, それ以外なら &ldquo;Alloy&rdquo; を出力する。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">A,B <span style="color:#f92672">=</span> map(int,input()<span style="color:#f92672">.</span>split())
+
+<span style="color:#66d9ef">if</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">&lt;</span> A <span style="color:#f92672">and</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">&lt;</span> B:
+    print (<span style="color:#e6db74">&#34;Alloy&#34;</span>)
+<span style="color:#66d9ef">elif</span> B <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+    print (<span style="color:#e6db74">&#34;Gold&#34;</span>)
+
+<span style="color:#66d9ef">elif</span> A <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+    print (<span style="color:#e6db74">&#34;Silver&#34;</span>)
+<span style="color:#66d9ef">else</span>:
+    <span style="color:#66d9ef">pass</span>
+</code></pre></div><p>問題文通り実装するだけ。最後の <code>else:pass</code> はいらないな。</p>
+<h1 id="b---weak-password">B - Weak Password</h1>
+<p>問題: <a href="https://atcoder.jp/contests/abc212/tasks/abc212_b">B - Weak Password</a></p>
+<p>文字列として数字4桁が入力される。<br>
+以下の条件を満たす場合、 &ldquo;Weak&rdquo; と出力し、それ以外の場合 &ldquo;Strong&rdquo; と出力する。</p>
+<ul>
+<li>4桁とも同じ数字</li>
+<li>1≤i≤3 をみたす任意の整数 i について、Xi+1 が、Xi の次の数字である。ただし9の次は0である。</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">p <span style="color:#f92672">=</span> input()
+
+<span style="color:#66d9ef">if</span> p[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">==</span> p[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">==</span> p[<span style="color:#ae81ff">2</span>] <span style="color:#f92672">==</span> p[<span style="color:#ae81ff">3</span>]:
+    ans <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Weak&#34;</span>
+<span style="color:#66d9ef">else</span>:
+    <span style="color:#66d9ef">if</span> (int(p[<span style="color:#ae81ff">0</span>])<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">==</span> int(p[<span style="color:#ae81ff">1</span>]) <span style="color:#f92672">or</span> int(p[<span style="color:#ae81ff">0</span>])<span style="color:#f92672">-</span><span style="color:#ae81ff">9</span> <span style="color:#f92672">==</span> int(p[<span style="color:#ae81ff">1</span>])) <span style="color:#f92672">and</span> (int(p[<span style="color:#ae81ff">1</span>])<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">==</span> int(p[<span style="color:#ae81ff">2</span>]) <span style="color:#f92672">or</span> int(p[<span style="color:#ae81ff">1</span>])<span style="color:#f92672">-</span><span style="color:#ae81ff">9</span> <span style="color:#f92672">==</span> int(p[<span style="color:#ae81ff">2</span>])) <span style="color:#f92672">and</span> (int(p[<span style="color:#ae81ff">2</span>])<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">==</span> int(p[<span style="color:#ae81ff">3</span>]) <span style="color:#f92672">or</span> int(p[<span style="color:#ae81ff">2</span>])<span style="color:#f92672">-</span><span style="color:#ae81ff">9</span> <span style="color:#f92672">==</span> int(p[<span style="color:#ae81ff">3</span>])):
+        ans <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Weak&#34;</span>
+    <span style="color:#66d9ef">else</span>:
+        ans <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Strong&#34;</span>
+
+print (ans)
+</code></pre></div><p>条件と確認ががややめんどくさいが、書くだけ。<br>
+もっとスマートな書き方あると思う。</p>
+<h1 id="c---min-difference">C - Min Difference</h1>
+<p>問題: <a href="https://atcoder.jp/contests/abc212/tasks/abc212_c">C - Min Difference</a></p>
+<p>2つの数列A,Bが与えられるので、それぞれの中の任意の数字一つずつの差分が最も小さくなるものを出力する。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> bisect
+N,M <span style="color:#f92672">=</span> map(int,input()<span style="color:#f92672">.</span>split())
+A <span style="color:#f92672">=</span> sorted(list(set(list(map(int,input()<span style="color:#f92672">.</span>split())))))
+B <span style="color:#f92672">=</span> sorted(list(set(list(map(int,input()<span style="color:#f92672">.</span>split())))))
+lenA <span style="color:#f92672">=</span> len(A)
+lenB <span style="color:#f92672">=</span> len(B)
+
+ans <span style="color:#f92672">=</span> float(<span style="color:#e6db74">&#39;inf&#39;</span>)
+<span style="color:#66d9ef">if</span> lenA <span style="color:#f92672">&lt;=</span> lenB:
+    <span style="color:#66d9ef">for</span> a <span style="color:#f92672">in</span> A:
+        i <span style="color:#f92672">=</span> bisect<span style="color:#f92672">.</span>bisect_right(B,a)
+        <span style="color:#66d9ef">if</span> i <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+            ans <span style="color:#f92672">=</span> min(ans, abs(a<span style="color:#f92672">-</span>B[i]))
+        <span style="color:#66d9ef">elif</span> i <span style="color:#f92672">==</span> lenB:
+            ans <span style="color:#f92672">=</span> min(ans, abs(a<span style="color:#f92672">-</span>B[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]))
+        <span style="color:#66d9ef">else</span>:
+            ans <span style="color:#f92672">=</span> min(ans, abs(a<span style="color:#f92672">-</span>B[i]), abs(a<span style="color:#f92672">-</span>B[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]))
+
+<span style="color:#66d9ef">elif</span> lenB <span style="color:#f92672">&lt;</span> lenA:
+    <span style="color:#66d9ef">for</span> b <span style="color:#f92672">in</span> B:
+        i <span style="color:#f92672">=</span> bisect<span style="color:#f92672">.</span>bisect_right(A,b)
+        <span style="color:#66d9ef">if</span> i <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+            ans <span style="color:#f92672">=</span> min(ans, abs(b<span style="color:#f92672">-</span>A[i]))
+        <span style="color:#66d9ef">elif</span> i <span style="color:#f92672">==</span> lenA:
+            ans <span style="color:#f92672">=</span> min(ans, abs(b<span style="color:#f92672">-</span>A[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]))
+        <span style="color:#66d9ef">else</span>:
+            ans <span style="color:#f92672">=</span> min(ans, abs(b<span style="color:#f92672">-</span>A[i]), abs(b<span style="color:#f92672">-</span>A[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]))
+
+print (ans)
+</code></pre></div><p>素直に全部調べるとTLEする（はず）。<br>
+今回は、A、Bのうち短いほうを、長い方にたいして二分探索で最も近いものを確認し、それぞれと比較することで最小値を求めた。<br>
+A と B の長さ N,M が与えられるのでそれをつかえば単純にどっちが短いかわかるかなって思ったけど、サンプル3で同じ数字が複数回入るパターンがあり、<br>
+それだと長さの比較に N と M は使えないなぁと思ったので、重複の排除のために一度 <code>set</code> にして、改めて <code>list</code> にして長さを比較した。<br>
+ただしこれをやってもワーストケース（つまりAの長さとBの長さが等しい）パターンはあるので、これは本質的にあんまり意味ない。<br>
+たぶんこの二分探索ができてれば良い問題のはず。</p>
+<p>&ndash;</p>
+<p>今回は A, B, C の3完。C通せてよかった。<br>
+DにもチャレンジしたけどこっちはTLE。（ついでにWAもでてた。。）<br>
+問題文的にはそんなに難しくなさそうなんだけど、データの持ち方とかで工夫が必要そうだなー。</p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/%E7%AB%B6%E3%83%97%E3%83%AD/" rel="tag">競プロ</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/python/" rel="tag">python</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/posts/20210727/network_change2/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">インターネット回線を切り替えた(2)</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 mollinaca.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

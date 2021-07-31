@@ -6,20 +6,11 @@
     <description>Recent content in Tags on mollinaca:/dev/random</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
-    <lastBuildDate>Tue, 27 Jul 2021 15:00:00 +0900</lastBuildDate><atom:link href="https://blog.mollinaca.dev/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>misc</title>
-      <link>https://blog.mollinaca.dev/tags/misc/</link>
-      <pubDate>Tue, 27 Jul 2021 15:00:00 +0900</pubDate>
-      
-      <guid>https://blog.mollinaca.dev/tags/misc/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Sat, 31 Jul 2021 23:00:00 +0900</lastBuildDate><atom:link href="https://blog.mollinaca.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>python</title>
       <link>https://blog.mollinaca.dev/tags/python/</link>
-      <pubDate>Sun, 25 Jul 2021 23:00:00 +0900</pubDate>
+      <pubDate>Sat, 31 Jul 2021 23:00:00 +0900</pubDate>
       
       <guid>https://blog.mollinaca.dev/tags/python/</guid>
       <description></description>
@@ -28,9 +19,18 @@
     <item>
       <title>競プロ</title>
       <link>https://blog.mollinaca.dev/tags/%E7%AB%B6%E3%83%97%E3%83%AD/</link>
-      <pubDate>Sun, 25 Jul 2021 23:00:00 +0900</pubDate>
+      <pubDate>Sat, 31 Jul 2021 23:00:00 +0900</pubDate>
       
       <guid>https://blog.mollinaca.dev/tags/%E7%AB%B6%E3%83%97%E3%83%AD/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>misc</title>
+      <link>https://blog.mollinaca.dev/tags/misc/</link>
+      <pubDate>Tue, 27 Jul 2021 15:00:00 +0900</pubDate>
+      
+      <guid>https://blog.mollinaca.dev/tags/misc/</guid>
       <description></description>
     </item>
     
