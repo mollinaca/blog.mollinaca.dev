@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>雑記 on mollinaca:/dev/random</title>
+    <link>https://blog.mollinaca.dev/tags/%E9%9B%91%E8%A8%98/</link>
+    <description>Recent content in 雑記 on mollinaca:/dev/random</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Sat, 14 Aug 2021 23:00:00 +0900</lastBuildDate><atom:link href="https://blog.mollinaca.dev/tags/%E9%9B%91%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vaccine</title>
+      <link>https://blog.mollinaca.dev/posts/20210814/vaccine/</link>
+      <pubDate>Sat, 14 Aug 2021 23:00:00 +0900</pubDate>
+      
+      <guid>https://blog.mollinaca.dev/posts/20210814/vaccine/</guid>
+      <description>ワクチン2回目を接種してきた。 職域接種で、モデルナを2回。1回目は 7/14、2回目は本日 8/11。 1回目接種後 当日夜に37度代の発熱のみ。他に症状は特になし。 注射した腕の痛みはあり、腕をあげたり注射をした場所を押したりすると痛むが、それも1</description>
+    </item>
+    
+  </channel>
+</rss>

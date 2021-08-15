@@ -2,19 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.mollinaca.dev/</loc>
+    <lastmod>2021-08-14T23:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.mollinaca.dev/posts/</loc>
+    <lastmod>2021-08-14T23:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.mollinaca.dev/tags/</loc>
+    <lastmod>2021-08-14T23:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.mollinaca.dev/posts/20210814/vaccine/</loc>
+    <lastmod>2021-08-14T23:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.mollinaca.dev/tags/%E9%9B%91%E8%A8%98/</loc>
+    <lastmod>2021-08-14T23:00:00+09:00</lastmod>
+  </url><url>
     <loc>https://blog.mollinaca.dev/posts/20210731/abc212/</loc>
     <lastmod>2021-07-31T23:00:00+09:00</lastmod>
   </url><url>
-    <loc>https://blog.mollinaca.dev/</loc>
-    <lastmod>2021-07-31T23:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://blog.mollinaca.dev/posts/</loc>
-    <lastmod>2021-07-31T23:00:00+09:00</lastmod>
-  </url><url>
     <loc>https://blog.mollinaca.dev/tags/python/</loc>
-    <lastmod>2021-07-31T23:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://blog.mollinaca.dev/tags/</loc>
     <lastmod>2021-07-31T23:00:00+09:00</lastmod>
   </url><url>
     <loc>https://blog.mollinaca.dev/tags/%E7%AB%B6%E3%83%97%E3%83%AD/</loc>
