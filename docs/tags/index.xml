@@ -8,11 +8,11 @@
     <language>ja-JP</language>
     <lastBuildDate>Sat, 14 Aug 2021 23:00:00 +0900</lastBuildDate><atom:link href="https://blog.mollinaca.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>雑記</title>
-      <link>https://blog.mollinaca.dev/tags/%E9%9B%91%E8%A8%98/</link>
+      <title>misc</title>
+      <link>https://blog.mollinaca.dev/tags/misc/</link>
       <pubDate>Sat, 14 Aug 2021 23:00:00 +0900</pubDate>
       
-      <guid>https://blog.mollinaca.dev/tags/%E9%9B%91%E8%A8%98/</guid>
+      <guid>https://blog.mollinaca.dev/tags/misc/</guid>
       <description></description>
     </item>
     
@@ -31,15 +31,6 @@
       <pubDate>Sat, 31 Jul 2021 23:00:00 +0900</pubDate>
       
       <guid>https://blog.mollinaca.dev/tags/%E7%AB%B6%E3%83%97%E3%83%AD/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>misc</title>
-      <link>https://blog.mollinaca.dev/tags/misc/</link>
-      <pubDate>Tue, 27 Jul 2021 15:00:00 +0900</pubDate>
-      
-      <guid>https://blog.mollinaca.dev/tags/misc/</guid>
       <description></description>
     </item>
     
