@@ -6,7 +6,16 @@
     <description>Recent content on mollinaca:/dev/random</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
-    <lastBuildDate>Sat, 14 Aug 2021 23:00:00 +0900</lastBuildDate><atom:link href="https://blog.mollinaca.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Sep 2021 10:00:00 +0900</lastBuildDate><atom:link href="https://blog.mollinaca.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>油断...</title>
+      <link>https://blog.mollinaca.dev/posts/20210911/yudann/</link>
+      <pubDate>Sat, 11 Sep 2021 10:00:00 +0900</pubDate>
+      
+      <guid>https://blog.mollinaca.dev/posts/20210911/yudann/</guid>
+      <description>油断するとすぐサボる、、、ちゃんと書こうと思ったときに書こう 最近のメモ 技術系 アルゴリズムお勉強ネタ（あんま進んでない） slack app つくってる話、bolt試した話 ubuntu の cron での source コマンドが使えなかった話 雑記系 34インチモニタ買った</description>
+    </item>
+    
     <item>
       <title>Vaccine</title>
       <link>https://blog.mollinaca.dev/posts/20210814/vaccine/</link>
