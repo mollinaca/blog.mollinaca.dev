@@ -6,7 +6,16 @@
     <description>Recent content on mollinaca:/dev/random</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
-    <lastBuildDate>Sat, 11 Sep 2021 10:00:00 +0900</lastBuildDate><atom:link href="https://blog.mollinaca.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Sep 2021 22:00:00 +0900</lastBuildDate><atom:link href="https://blog.mollinaca.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>自宅用ローカルサーバ構築時のメモ</title>
+      <link>https://blog.mollinaca.dev/posts/20210912/local_server/</link>
+      <pubDate>Sun, 12 Sep 2021 22:00:00 +0900</pubDate>
+      
+      <guid>https://blog.mollinaca.dev/posts/20210912/local_server/</guid>
+      <description>自宅用ローカルサーバ構築時のメモ 環境 H/W: Raspberry Pi 4 Model B Rev 1.4 OS: 20.04.3 LTS (Focal Fossa) 作業内容・手順 OS用意 RaspberryPi に刺す SSD カードに OS イメージを用意する。 RaspberryPi Imager を使う。 メジャーなOS は Imager の GUI 上で DL できる。今回はここから Ubuntu 20.04.3 LTS を選択する。 OS を選択し、SSD カードに書き込む。</description>
+    </item>
+    
     <item>
       <title>油断...</title>
       <link>https://blog.mollinaca.dev/posts/20210911/yudann/</link>
