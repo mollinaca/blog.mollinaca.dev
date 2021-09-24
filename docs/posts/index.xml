@@ -6,7 +6,16 @@
     <description>Recent content in Posts on mollinaca:/dev/random</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
-    <lastBuildDate>Sun, 12 Sep 2021 22:00:00 +0900</lastBuildDate><atom:link href="https://blog.mollinaca.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Sep 2021 22:00:00 +0900</lastBuildDate><atom:link href="https://blog.mollinaca.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nextcloud on raspberrypi</title>
+      <link>https://blog.mollinaca.dev/posts/20210924/nextcloud_on_raspberrypi/</link>
+      <pubDate>Fri, 24 Sep 2021 22:00:00 +0900</pubDate>
+      
+      <guid>https://blog.mollinaca.dev/posts/20210924/nextcloud_on_raspberrypi/</guid>
+      <description>先日構築した Ubuntu on RaspberryPi4 に、 Nextcloud をインストールして、自宅用ファイルサーバとして利用する。 Nextcloud 公式ページは こちら いまどきの dropbox 風のUIのファイル共有サーバ。DBとWebサーバ(php)で稼働する。 アカウントや権限管理、ファイル共有なども今どきの操作感でで</description>
+    </item>
+    
     <item>
       <title>自宅用ローカルサーバ構築時のメモ</title>
       <link>https://blog.mollinaca.dev/posts/20210912/local_server/</link>

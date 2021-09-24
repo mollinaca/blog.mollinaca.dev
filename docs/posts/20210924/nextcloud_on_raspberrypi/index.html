@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Nextcloud on raspberrypi - mollinaca:/dev/random</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="Nextcloud on raspberrypi" />
+<meta property="og:description" content="先日構築した Ubuntu on RaspberryPi4 に、 Nextcloud をインストールして、自宅用ファイルサーバとして利用する。 Nextcloud 公式ページは こちら いまどきの dropbox 風のUIのファイル共有サーバ。DBとWebサーバ(php)で稼働する。 アカウントや権限管理、ファイル共有なども今どきの操作感でで" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.mollinaca.dev/posts/20210924/nextcloud_on_raspberrypi/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-09-24T22:00:00+09:00" />
+<meta property="article:modified_time" content="2021-09-24T22:00:00+09:00" />
+
+
+		<meta itemprop="name" content="Nextcloud on raspberrypi">
+<meta itemprop="description" content="先日構築した Ubuntu on RaspberryPi4 に、 Nextcloud をインストールして、自宅用ファイルサーバとして利用する。 Nextcloud 公式ページは こちら いまどきの dropbox 風のUIのファイル共有サーバ。DBとWebサーバ(php)で稼働する。 アカウントや権限管理、ファイル共有なども今どきの操作感でで"><meta itemprop="datePublished" content="2021-09-24T22:00:00+09:00" />
+<meta itemprop="dateModified" content="2021-09-24T22:00:00+09:00" />
+<meta itemprop="wordCount" content="885">
+<meta itemprop="keywords" content="raspberrypi,nextcloud," />
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Nextcloud on raspberrypi"/>
+<meta name="twitter:description" content="先日構築した Ubuntu on RaspberryPi4 に、 Nextcloud をインストールして、自宅用ファイルサーバとして利用する。 Nextcloud 公式ページは こちら いまどきの dropbox 風のUIのファイル共有サーバ。DBとWebサーバ(php)で稼働する。 アカウントや権限管理、ファイル共有なども今どきの操作感でで"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="mollinaca:/dev/random" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">mollinaca:/dev/random</div>
+					
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/pages/about/">
+				
+				<span class="menu__text">ABOUT</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/posts/">
+				
+				<span class="menu__text">POSTS</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Nextcloud on raspberrypi</h1>
+			<div class="post__meta meta"><div class="meta__item-author meta__item">
+	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">mollinaca</span>
+</div>
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-09-24T22:00:00&#43;09:00">2021-09-24</time></div></div>
+		</header>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#nextcloud">Nextcloud</a></li>
+    <li><a href="#前提">前提</a></li>
+    <li><a href="#構築">構築</a>
+      <ul>
+        <li><a href="#イメージを-pull-する">イメージを pull する</a></li>
+        <li><a href="#docker-composeyml">docker-compose.yml</a></li>
+        <li><a href="#起動">起動</a></li>
+        <li><a href="#ipアドレスでアクセスできるようにする">IPアドレスでアクセスできるようにする。</a></li>
+      </ul>
+    </li>
+    <li><a href="#接続">接続</a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<p>先日構築した Ubuntu on RaspberryPi4 に、 Nextcloud をインストールして、自宅用ファイルサーバとして利用する。</p>
+<h1 id="nextcloud">Nextcloud</h1>
+<p>公式ページは <a href="https://nextcloud.com/">こちら</a><br>
+いまどきの dropbox 風のUIのファイル共有サーバ。DBとWebサーバ(php)で稼働する。<br>
+アカウントや権限管理、ファイル共有なども今どきの操作感でできて無料で使う分にはとても良い。<br>
+docker イメージが公開されており、ARM用のイメージもあるため、 RaspberryPi でも問題なく動く。</p>
+<h1 id="前提">前提</h1>
+<ul>
+<li>LAN内からのアクセスのみで、インターネットからのアクセスは許可しない</li>
+<li>ドメインは振らず、IPアドレスでアクセスさせる</li>
+<li>HTTP のまま使う</li>
+</ul>
+<p>これらの前提条件はあくまでLAN内用途に限るからであり、グローバルからアクセスできる場合は絶対にこんな条件で運用してはいけない。</p>
+<h1 id="構築">構築</h1>
+<h2 id="イメージを-pull-する">イメージを pull する</h2>
+<p>Nextcloud の docker イメージは <a href="https://hub.docker.com/_/nextcloud">こちら</a></p>
+<h2 id="docker-composeyml">docker-compose.yml</h2>
+<p>公式で用意してくれているのでほぼそのまま。<br>
+apache を使う。</p>
+<pre><code>version: '2'
+
+volumes:
+  nextcloud:
+  db:
+
+services:
+  db:
+    image: mariadb
+    restart: always
+    command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW --innodb-read-only-compressed=OFF
+    volumes:
+      - db:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=${ENV_MYSQL_ROOT_PASSWORD}
+      - MYSQL_PASSWORD=${ENV_MYSQL_PASSWORD}
+      - MYSQL_DATABASE=nextcloud
+      - MYSQL_USER=nextcloud
+
+  app:
+    image: nextcloud
+    restart: always
+    ports:
+      - 8080:80
+    links:
+      - db
+    volumes:
+      - nextcloud:/var/www/html
+    environment:
+      - MYSQL_PASSWORD=${ENV_MYSQL_PASSWORD}
+      - MYSQL_DATABASE=nextcloud
+      - MYSQL_USER=nextcloud
+      - MYSQL_HOST=db
+</code></pre><p>DB の初期化でコケたので、 mariadb の起動コマンドに <code> --innodb-read-only-compressed=OFF</code> を追加している。</p>
+<p>ローカルに <code>.env</code> ファイルを作成し、中に各種変数を設定する。</p>
+<pre><code>ENV_MYSQL_ROOT_PASSWORD=[mariadbのrootパスワード]
+ENV_MYSQL_PASSWORD=[mariadbのユーザパスワード]
+</code></pre><h2 id="起動">起動</h2>
+<p><code># docker-compose up -d</code><br>
+問題なければこれで起動する。
+また、 <code>/var/lib/docker/volumes/nextcloud_nextcloud/</code> がマウントされるので、必要に応じてこちらの設定ファイルを編集する。</p>
+<h2 id="ipアドレスでアクセスできるようにする">IPアドレスでアクセスできるようにする。</h2>
+<p>Nextcloud の <code>config.php</code> を編集する。<br>
+上記の手順で docker イメージを構築すれば、以下のパスに置いてあり、これが docker イメージにマウントされている。</p>
+<p><code># vi /var/lib/docker/volumes/nextcloud_nextcloud/_data/config/config.php</code></p>
+<pre><code>&lt;?php
+$CONFIG = array (
+  'memcache.local' =&gt; '\\OC\\Memcache\\APCu',
+~~~
+  'trusted_domains' =&gt;
+  array (
+          0 =&gt; '[ホスト名]',
+          1 =&gt; '[IPアドレスを追加]',
+  ),
+</code></pre><p>デフォルトだと、 <code>0 =&gt; '[ホスト名]:[ポート番号]</code> のみが書いてあるので、それに続く形でIPアドレスを記載する。<br>
+また、ここはあくまで <code>trusted_domains</code> を書く場所のようなので、ポート番号は不要でドメイン名だけを書けば良い模様。</p>
+<h1 id="接続">接続</h1>
+<p>ブラウザで <code>http://[IPアドレス]:8080</code> へ接続する。<br>
+今回のローカルサーバは <code>192.168.100.202</code> が割与えられている。</p>
+<figure><img src="nextcloud_welcome.png"/>
+</figure>
+
+<p>無事接続できた。</p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/raspberrypi/" rel="tag">raspberrypi</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/nextcloud/" rel="tag">nextcloud</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/posts/20210912/local_server/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">自宅用ローカルサーバ構築時のメモ</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 mollinaca.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
