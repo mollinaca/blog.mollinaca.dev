@@ -78,6 +78,22 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h2 class="list__title post__title">
+			<a href="/posts/20210927/abc220/" rel="bookmark">
+			ABC220
+			</a>
+		</h2>
+		<div class="list__meta meta"><div class="meta__item-author meta__item">
+	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">mollinaca</span>
+</div>
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-09-27T23:00:00&#43;09:00">2021-09-27</time></div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		A - Find Multiple 問題: A - Find Multiple A以上B以下であるCの倍数を一つ出力する。 条件を満たすものがない場合は -1 を出力する。 A,B,C = map(int,input().split()) for x in range(A,B+1): if x%C == 0: print (x) exit () print (-1) いくつか解放を思いつくが、A問題だし単純に for ループを書いてしまうのが早いと思った。 B - Base K 問題: B -
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h2 class="list__title post__title">
 			<a href="/posts/20210924/nextcloud_on_raspberrypi/" rel="bookmark">
 			Nextcloud on raspberrypi
 			</a>
@@ -219,22 +235,6 @@
 	<div class="content list__excerpt post__content clearfix">
 		A - 深さ優先探索 次の問題を解く。A - 深さ優先探索 実装 H,W = map(int,input().split()) grid = [list(input()) for i in range(H)] # スタート地点を探す found = False for y,line in enumerate(grid): for x,p in enumerate(line): if p == &#34;s&#34;: start = (y,x) found = True break if found: break from collections import deque q = deque() q.append(start) direction = [[-1,0],[1,0],[0,-1],[0,1]] while q: p = q.pop() # DFS y = p[0] x = p[1] for d in direction: ny = y + d[0] nx = x + d[1] if 0 &lt;= ny &lt; H and 0 &lt;= nx &lt;
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/posts/20210707/dfs_bfs/" rel="bookmark">
-			DFS と BFS
-			</a>
-		</h2>
-		<div class="list__meta meta"><div class="meta__item-author meta__item">
-	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">mollinaca</span>
-</div>
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-07-07T23:00:00&#43;09:00">2021-07-07</time></div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		グラフを取得できたら、深さ優先探索（DFS）と幅優先探索（BFS）を実装してみる。 問題1 入力するグラフは以下。よくあるやつ。 これをテキスト情報で入力にすると以下のようになる。 7 6 1 2 1 3 2 4 2 5 3 6 3 7 このグラフに対して、1から出発して7に
-	</div>
 </article>
 </main>
 
@@ -250,11 +250,11 @@
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/posts/20210927/abc220/">ABC220</a></li>
 			<li class="widget__item"><a class="widget__link" href="/posts/20210924/nextcloud_on_raspberrypi/">Nextcloud on raspberrypi</a></li>
 			<li class="widget__item"><a class="widget__link" href="/posts/20210912/local_server/">自宅用ローカルサーバ構築時のメモ</a></li>
 			<li class="widget__item"><a class="widget__link" href="/posts/20210911/yudann/">油断...</a></li>
 			<li class="widget__item"><a class="widget__link" href="/posts/20210814/vaccine/">Vaccine</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/20210731/abc212/">ABC212</a></li>
 		</ul>
 	</div>
 </div>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ABC220 - mollinaca:/dev/random</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="ABC220" />
+<meta property="og:description" content="A - Find Multiple 問題: A - Find Multiple A以上B以下であるCの倍数を一つ出力する。 条件を満たすものがない場合は -1 を出力する。 A,B,C = map(int,input().split()) for x in range(A,B&#43;1): if x%C == 0: print (x) exit () print (-1) いくつか解放を思いつくが、A問題だし単純に for ループを書いてしまうのが早いと思った。 B - Base K 問題: B -" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.mollinaca.dev/posts/20210927/abc220/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-09-27T23:00:00+09:00" />
+<meta property="article:modified_time" content="2021-09-27T23:00:00+09:00" />
+
+
+		<meta itemprop="name" content="ABC220">
+<meta itemprop="description" content="A - Find Multiple 問題: A - Find Multiple A以上B以下であるCの倍数を一つ出力する。 条件を満たすものがない場合は -1 を出力する。 A,B,C = map(int,input().split()) for x in range(A,B&#43;1): if x%C == 0: print (x) exit () print (-1) いくつか解放を思いつくが、A問題だし単純に for ループを書いてしまうのが早いと思った。 B - Base K 問題: B -"><meta itemprop="datePublished" content="2021-09-27T23:00:00+09:00" />
+<meta itemprop="dateModified" content="2021-09-27T23:00:00+09:00" />
+<meta itemprop="wordCount" content="752">
+<meta itemprop="keywords" content="競プロ,python," />
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="ABC220"/>
+<meta name="twitter:description" content="A - Find Multiple 問題: A - Find Multiple A以上B以下であるCの倍数を一つ出力する。 条件を満たすものがない場合は -1 を出力する。 A,B,C = map(int,input().split()) for x in range(A,B&#43;1): if x%C == 0: print (x) exit () print (-1) いくつか解放を思いつくが、A問題だし単純に for ループを書いてしまうのが早いと思った。 B - Base K 問題: B -"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="mollinaca:/dev/random" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">mollinaca:/dev/random</div>
+					
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/pages/about/">
+				
+				<span class="menu__text">ABOUT</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/posts/">
+				
+				<span class="menu__text">POSTS</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">ABC220</h1>
+			<div class="post__meta meta"><div class="meta__item-author meta__item">
+	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">mollinaca</span>
+</div>
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-09-27T23:00:00&#43;09:00">2021-09-27</time></div></div>
+		</header>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#a---find-multiple">A - Find Multiple</a></li>
+    <li><a href="#b---base-k">B - Base K</a></li>
+    <li><a href="#c---long-sequence">C - Long Sequence</a></li>
+    <li><a href="#d---fg-operation">D - FG operation</a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<h1 id="a---find-multiple">A - Find Multiple</h1>
+<p>問題: <a href="https://atcoder.jp/contests/abc220/tasks/abc220_a">A - Find Multiple</a></p>
+<p>A以上B以下であるCの倍数を一つ出力する。<br>
+条件を満たすものがない場合は <code>-1</code> を出力する。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">A,B,C <span style="color:#f92672">=</span> map(int,input()<span style="color:#f92672">.</span>split())
+
+<span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> range(A,B<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>):
+    <span style="color:#66d9ef">if</span> x<span style="color:#f92672">%</span>C <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+        print (x)
+        exit ()
+
+print (<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)
+</code></pre></div><p>いくつか解放を思いつくが、A問題だし単純に for ループを書いてしまうのが早いと思った。</p>
+<h1 id="b---base-k">B - Base K</h1>
+<p>問題: <a href="https://atcoder.jp/contests/abc220/tasks/abc220_b">B - Base K</a></p>
+<p>整数A,BがK進数として与えられる。<br>
+A×Bを10進数表記で出力する。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">K <span style="color:#f92672">=</span> int(input())
+A,B <span style="color:#f92672">=</span> map(int,input()<span style="color:#f92672">.</span>split())
+print (int(str(A),K)<span style="color:#f92672">*</span>int(str(B),K))
+</code></pre></div><p>N進数の変換は <code>int関数</code> を使うと早い。<br>
+参考: <a href="https://docs.python.org/ja/3/library/functions.html?highlight=int#int">https://docs.python.org/ja/3/library/functions.html?highlight=int#int</a><br>
+なお、<code>int()</code> で基数変換を行う場合は、第一引数は文字列型である必要がある。※16進数とかを考えれば文字列が入ってくるので当たり前だが</p>
+<h1 id="c---long-sequence">C - Long Sequence</h1>
+<p>問題: <a href="https://atcoder.jp/contests/abc220/tasks/abc220_c">C - Long Sequence</a></p>
+<p>長さNの正の整数からなる文字列Aをいっぱい連結したものを用意し、どのタイミングでその和がXを超えるか？</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">N <span style="color:#f92672">=</span> int(input())
+A <span style="color:#f92672">=</span> list(map(int,input()<span style="color:#f92672">.</span>split()))
+sA <span style="color:#f92672">=</span> sum(A)
+X <span style="color:#f92672">=</span> int(input())
+
+<span style="color:#75715e"># 累積和</span>
+W <span style="color:#f92672">=</span> []
+<span style="color:#66d9ef">for</span> i,a <span style="color:#f92672">in</span> enumerate(A):
+    <span style="color:#66d9ef">if</span> i <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+        W<span style="color:#f92672">.</span>append(a)   
+    <span style="color:#66d9ef">else</span>:
+        W<span style="color:#f92672">.</span>append(W[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]<span style="color:#f92672">+</span>a)
+
+X2 <span style="color:#f92672">=</span> X<span style="color:#f92672">//</span>sA
+X3 <span style="color:#f92672">=</span> X<span style="color:#f92672">-</span>(X2<span style="color:#f92672">*</span>sA)
+
+<span style="color:#f92672">import</span> bisect
+print (N<span style="color:#f92672">*</span>X2<span style="color:#f92672">+</span>bisect<span style="color:#f92672">.</span>bisect_right(W,X3)<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)
+</code></pre></div><p>Aの全部の合計値と、Aの累積和を用意しておき、</p>
+<ul>
+<li>合計値の塊が何回目で超えるか？ → その手前に答えがある</li>
+<li>累積和の何番目で超えるか？ → 答え
+と求めた。累積和の何回目？を二分探索で書いたが、ここは愚直にO(N)でやっても問題なさそう。</li>
+</ul>
+<h1 id="d---fg-operation">D - FG operation</h1>
+<p>問題: <a href="https://atcoder.jp/contests/abc220/tasks/abc220_d">D - FG operation</a></p>
+<p>FG2つのオペレーションをたくさん繰り返した全部のパターンを調べてね
+以下の回答を作成したが、サンプルはACなものの、RE/TLEとなる。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> copy
+<span style="color:#f92672">from</span> collections <span style="color:#f92672">import</span> deque
+N <span style="color:#f92672">=</span> int(input())
+A <span style="color:#f92672">=</span> deque(list(map(int,input()<span style="color:#f92672">.</span>split())))
+
+ANS <span style="color:#f92672">=</span> {}
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">10</span>):
+    ANS[i] <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">op_f</span> (q:deque) <span style="color:#f92672">-&gt;</span> deque:
+    x <span style="color:#f92672">=</span> q<span style="color:#f92672">.</span>popleft()
+    y <span style="color:#f92672">=</span> q<span style="color:#f92672">.</span>popleft()
+    q<span style="color:#f92672">.</span>appendleft((x<span style="color:#f92672">+</span>y)<span style="color:#f92672">%</span><span style="color:#ae81ff">10</span>)
+    <span style="color:#66d9ef">return</span> q
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">op_g</span> (q:deque) <span style="color:#f92672">-&gt;</span> deque:
+    x <span style="color:#f92672">=</span> q<span style="color:#f92672">.</span>popleft()
+    y <span style="color:#f92672">=</span> q<span style="color:#f92672">.</span>popleft()
+    q<span style="color:#f92672">.</span>appendleft((x<span style="color:#f92672">*</span>y)<span style="color:#f92672">%</span><span style="color:#ae81ff">10</span>)
+    <span style="color:#66d9ef">return</span> q
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">dfs</span> (q:deque):
+    <span style="color:#66d9ef">if</span> len(q) <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
+        ANS[q[<span style="color:#ae81ff">0</span>]] <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+        <span style="color:#66d9ef">return</span>
+    q_back <span style="color:#f92672">=</span> copy<span style="color:#f92672">.</span>deepcopy(q)
+    dfs (op_f(q))
+    q <span style="color:#f92672">=</span> copy<span style="color:#f92672">.</span>deepcopy(q_back)
+    dfs (op_g(q))
+
+dfs (A)
+
+<span style="color:#66d9ef">for</span> a <span style="color:#f92672">in</span> ANS<span style="color:#f92672">.</span>values():
+    print (a<span style="color:#f92672">%</span><span style="color:#ae81ff">998244353</span>)
+</code></pre></div><p>以下のような図をかいて、再帰DFSで全探索したらいけるかなと思ったがだめだった。</p>
+<figure><img src="d.jpg"/>
+</figure>
+
+<p>解説によるとDPが必要らしい。わかってないやつだ。</p>
+<p>&ndash;</p>
+<p>今回は A, B, C の3完。<br>
+Dにもチャレンジしたけど撃沈。これはまだ無理なやつだなー（いつになったらできるようになるんだ・・・）。</p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/%E7%AB%B6%E3%83%97%E3%83%AD/" rel="tag">競プロ</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/python/" rel="tag">python</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/posts/20210924/nextcloud_on_raspberrypi/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Nextcloud on raspberrypi</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 mollinaca.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

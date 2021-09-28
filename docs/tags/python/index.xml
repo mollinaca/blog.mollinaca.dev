@@ -6,7 +6,16 @@
     <description>Recent content in python on mollinaca:/dev/random</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
-    <lastBuildDate>Sat, 31 Jul 2021 23:00:00 +0900</lastBuildDate><atom:link href="https://blog.mollinaca.dev/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Sep 2021 23:00:00 +0900</lastBuildDate><atom:link href="https://blog.mollinaca.dev/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ABC220</title>
+      <link>https://blog.mollinaca.dev/posts/20210927/abc220/</link>
+      <pubDate>Mon, 27 Sep 2021 23:00:00 +0900</pubDate>
+      
+      <guid>https://blog.mollinaca.dev/posts/20210927/abc220/</guid>
+      <description>A - Find Multiple 問題: A - Find Multiple A以上B以下であるCの倍数を一つ出力する。 条件を満たすものがない場合は -1 を出力する。 A,B,C = map(int,input().split()) for x in range(A,B+1): if x%C == 0: print (x) exit () print (-1) いくつか解放を思いつくが、A問題だし単純に for ループを書いてしまうのが早いと思った。 B - Base K 問題: B -</description>
+    </item>
+    
     <item>
       <title>ABC212</title>
       <link>https://blog.mollinaca.dev/posts/20210731/abc212/</link>
