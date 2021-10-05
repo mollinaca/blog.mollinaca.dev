@@ -2,19 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.mollinaca.dev/tags/misc/</loc>
+    <lastmod>2021-10-05T22:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.mollinaca.dev/</loc>
+    <lastmod>2021-10-05T22:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.mollinaca.dev/posts/</loc>
+    <lastmod>2021-10-05T22:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.mollinaca.dev/tags/</loc>
+    <lastmod>2021-10-05T22:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.mollinaca.dev/posts/20211005/misc/</loc>
+    <lastmod>2021-10-05T22:00:00+09:00</lastmod>
+  </url><url>
     <loc>https://blog.mollinaca.dev/posts/20210927/abc220/</loc>
     <lastmod>2021-09-27T23:00:00+09:00</lastmod>
   </url><url>
-    <loc>https://blog.mollinaca.dev/</loc>
-    <lastmod>2021-09-27T23:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://blog.mollinaca.dev/posts/</loc>
-    <lastmod>2021-09-27T23:00:00+09:00</lastmod>
-  </url><url>
     <loc>https://blog.mollinaca.dev/tags/python/</loc>
-    <lastmod>2021-09-27T23:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://blog.mollinaca.dev/tags/</loc>
     <lastmod>2021-09-27T23:00:00+09:00</lastmod>
   </url><url>
     <loc>https://blog.mollinaca.dev/tags/%E7%AB%B6%E3%83%97%E3%83%AD/</loc>
@@ -28,9 +34,6 @@
   </url><url>
     <loc>https://blog.mollinaca.dev/tags/raspberrypi/</loc>
     <lastmod>2021-09-24T22:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://blog.mollinaca.dev/tags/misc/</loc>
-    <lastmod>2021-09-12T22:00:00+09:00</lastmod>
   </url><url>
     <loc>https://blog.mollinaca.dev/tags/ubuntu/</loc>
     <lastmod>2021-09-12T22:00:00+09:00</lastmod>
